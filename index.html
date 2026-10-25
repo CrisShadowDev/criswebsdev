@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cris Web Dev | Websites for Real Estate Agents</title>
+<meta name="description" content="Websites built for real estate agents. Free mockup first. $500 per page, capped at $6,500. Care Plans from $250 a month.">
+<style>
+  :root { --ink: #101418; --muted: #5a6570; --line: #e3e8ec; --accent: #0b6fa4; --bg: #f7f9fa; --page: #ffffff; }
+  [data-theme="dark"] { --ink: #e8edf1; --muted: #9aa7b2; --line: #2a3640; --accent: #4db2e3; --bg: #1a232b; --page: #12181d; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); line-height: 1.6; background: var(--page); }
+  a { color: var(--accent); }
+  .theme-toggle { float: right; padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); cursor: pointer; font-size: 14px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { padding: 24px 0 8px; border-bottom: 2px solid var(--ink); }
+  .brand { font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  h1 { font-size: 40px; line-height: 1.15; margin: 0 0 12px; }
+  h2 { font-size: 24px; margin: 40px 0 8px; }
+  h3 { font-size: 18px; margin: 24px 0 4px; }
+  p { margin: 8px 0; }
+  .lede { font-size: 19px; color: #26313a; }
+  .muted { color: var(--muted); }
+  .cta { display: inline-block; margin: 16px 0; padding: 12px 22px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+  .cta:hover { opacity: 0.9; }
+  .card { border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin: 16px 0; background: var(--bg); }
+  .price { font-size: 22px; font-weight: 700; margin: 4px 0; }
+  ol.steps { padding-left: 22px; }
+  ol.steps li { margin: 10px 0; }
+  .example a { font-weight: 600; color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <button class="theme-toggle" id="theme-toggle" type="button">Light theme</button>
+  <p class="brand">Cris Web Dev</p>
+  <h1>Websites that bring buyers to you.</h1>
+  <p class="lede">Built for real estate agents. You see a free mockup of your new site first, and you only pay when you love it.</p>
+  <a class="cta" href="mailto:criswebsdev@gmail.com?subject=Free%20mockup%20for%20my%20site">Get my free mockup</a>
+  <p class="muted">Or email me directly: <a href="mailto:criswebsdev@gmail.com">criswebsdev@gmail.com</a></p>
+</header>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Free mockup.</strong> I build a preview of your new site. No cost, no commitment.</li>
+    <li><strong>You approve it.</strong> We tweak it until it looks right to you.</li>
+    <li><strong>I build it out.</strong> Full site, ready to show buyers and sellers.</li>
+    <li><strong>Care Plan keeps it fresh.</strong> Updates, fixes, and improvements on a schedule you pick.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Services and pricing</h2>
+
+  <div class="card">
+    <h3>Website build</h3>
+    <p class="price">$500 per page, capped at $6,500</p>
+    <p>A complete site for your brokerage or team: listings, about, contact, and the pages buyers actually visit. You pay per page, and the total never passes $6,500 no matter how big the site gets.</p>
+  </div>
+
+  <div class="card">
+    <h3>Care Plan</h3>
+    <p class="price">$750 a month, or $1,200 a month weekly</p>
+    <p>Ongoing care for your site. Monthly plan covers regular updates and fixes. Weekly plan covers faster turnaround and more frequent improvements.</p>
+  </div>
+
+  <div class="card">
+    <h3>AI chat agent</h3>
+    <p class="price">$1,000 setup, then $200 a month</p>
+    <p>An assistant on your site that answers visitors and captures leads while you are out showing homes.</p>
+  </div>
+
+  <div class="card">
+    <h3>AI VA tier</h3>
+    <p class="price">$2,500</p>
+    <p>A fuller AI assistant setup for agents who want more than chat: lead handling built around your site.</p>
+  </div>
+</section>
+
+<section class="example">
+  <h2>Example of my work</h2>
+  <p><a href="https://hittheorycards.com">hittheorycards.com</a> — a site I built. Your free mockup will show what the same treatment looks like for your own brand.</p>
+</section>
+
+<section>
+  <h2>Start with the free mockup</h2>
+  <p>Send me your name, your brokerage, and your current site if you have one. I will send back a mockup you can actually look at before you spend anything.</p>
+  <a class="cta" href="mailto:criswebsdev@gmail.com?subject=Free%20mockup%20for%20my%20site">Get my free mockup</a>
+</section>
+
+<footer>
+  <p>Built by Crishtian BoBo. Questions? Email <a href="mailto:criswebsdev@gmail.com">criswebsdev@gmail.com</a>.</p>
+</footer>
+
+</div>
+<script>
+(function () {
+  var btn = document.getElementById('theme-toggle');
+  btn.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-theme') || 'dark';
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    btn.textContent = next === 'dark' ? 'Light theme' : 'Dark theme';
+  });
+})();
+</script>
+</body>
+</html>
